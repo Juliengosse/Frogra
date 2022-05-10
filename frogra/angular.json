@@ -1,0 +1,8 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "frogra": "apps/frogra",
+    "frogra-e2e": "apps/frogra-e2e"
+  }
+}

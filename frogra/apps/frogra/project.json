@@ -1,0 +1,86 @@
+{
+  "projectType": "application",
+  "sourceRoot": "apps/frogra/src",
+  "prefix": "frogra",
+  "targets": {
+    "build": {
+      "executor": "@angular-devkit/build-angular:browser",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/apps/frogra",
+        "index": "apps/frogra/src/index.html",
+        "main": "apps/frogra/src/main.ts",
+        "polyfills": "apps/frogra/src/polyfills.ts",
+        "tsConfig": "apps/frogra/tsconfig.app.json",
+        "assets": ["apps/frogra/src/favicon.ico", "apps/frogra/src/assets"],
+        "styles": ["apps/frogra/src/styles.css"],
+        "scripts": []
+      },
+      "configurations": {
+        "production": {
+          "budgets": [
+            {
+              "type": "initial",
+              "maximumWarning": "500kb",
+              "maximumError": "1mb"
+            },
+            {
+              "type": "anyComponentStyle",
+              "maximumWarning": "2kb",
+              "maximumError": "4kb"
+            }
+          ],
+          "fileReplacements": [
+            {
+              "replace": "apps/frogra/src/environments/environment.ts",
+              "with": "apps/frogra/src/environments/environment.prod.ts"
+            }
+          ],
+          "outputHashing": "all"
+        },
+        "development": {
+          "buildOptimizer": false,
+          "optimization": false,
+          "vendorChunk": true,
+          "extractLicenses": false,
+          "sourceMap": true,
+          "namedChunks": true
+        }
+      },
+      "defaultConfiguration": "production"
+    },
+    "serve": {
+      "executor": "@angular-devkit/build-angular:dev-server",
+      "configurations": {
+        "production": {
+          "browserTarget": "frogra:build:production"
+        },
+        "development": {
+          "browserTarget": "frogra:build:development"
+        }
+      },
+      "defaultConfiguration": "development"
+    },
+    "extract-i18n": {
+      "executor": "@angular-devkit/build-angular:extract-i18n",
+      "options": {
+        "browserTarget": "frogra:build"
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": ["apps/frogra/**/*.ts", "apps/frogra/**/*.html"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/apps/frogra"],
+      "options": {
+        "jestConfig": "apps/frogra/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}
