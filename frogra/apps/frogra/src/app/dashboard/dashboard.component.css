@@ -6,6 +6,9 @@ h2, a{
 h2 {
     text-align: center;
   }
+div{
+  text-align: center;
+}
   
   .heroes-menu {
     padding: 0;
@@ -22,7 +25,7 @@ h2 {
   }
   
   a {
-    background-color: white;
+    background-color: #3f525c;
     border-radius: 2px;
     padding: 1rem;
     font-size: 1rem;

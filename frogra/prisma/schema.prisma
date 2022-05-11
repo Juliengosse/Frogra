@@ -1,11 +1,52 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
-
 generator client {
   provider = "prisma-client-js"
 }
 
 datasource db {
-  provider = "sqlite"
-  url      = "file:./dev.db"
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
 }
+
+// We could not retrieve columns for the underlying table. Either it has none or you are missing rights to see them. Please check your privileges.
+model Plane {
+    id        Int     @id @default(autoincrement())
+    name      String  @db.VarChar(255)
+    hp        Int   
+    defense   Int
+    skill     Skill[]
+}
+
+model Skill {
+    id        Int     @id @default(autoincrement())
+    name      String  @db.VarChar(255)
+    type      String 
+    value     Int
+    plane     Plane   @relation(fields: [planeId], references: [id])
+    planeId  Int     @unique
+}
+
+model User {
+  id        Int       @id @default(autoincrement())
+  name      String?   @db.VarChar(255)
+  email     String    @unique @db.VarChar(255)
+  password  String    @db.VarChar(255)
+}
+
+
+// async function main() {
+//   await prisma.User.create({
+//     data: {
+//       name: 'test',
+//       email: 'test@test.test',
+//       password: 'test'
+//     },
+  
+//   })
+
+//   const allUsers = await prisma.user.findMany({
+//     include: {
+//       posts: true,
+//       profile: true,
+//     },
+//   })
+//   console.dir(allUsers, { depth: null })}
