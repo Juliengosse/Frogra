@@ -10,6 +10,14 @@ async function main() {
         password: 'test',
       },
     })
+
+    await prisma.plane.create({
+        data: {
+          name: 'Test',
+          email: 'test@test.test',
+          password: 'test',
+        },
+      })
   }
 
 main()

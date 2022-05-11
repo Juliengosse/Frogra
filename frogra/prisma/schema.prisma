@@ -31,22 +31,3 @@ model User {
   email     String    @unique @db.VarChar(255)
   password  String    @db.VarChar(255)
 }
-
-
-// async function main() {
-//   await prisma.User.create({
-//     data: {
-//       name: 'test',
-//       email: 'test@test.test',
-//       password: 'test'
-//     },
-  
-//   })
-
-//   const allUsers = await prisma.user.findMany({
-//     include: {
-//       posts: true,
-//       profile: true,
-//     },
-//   })
-//   console.dir(allUsers, { depth: null })}
