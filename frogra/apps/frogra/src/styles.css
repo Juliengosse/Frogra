@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+/* Application-wide Styles */
+@import url(./app/PressStart2P/stylesheet.css);
+h1, h2, h3{
+  font-family: 'press_start_2pregular';
+}
+
+h1 {
+  color: white;
+  outline-color: black;
+  font-size: 250%;
+  text-align: center;
+}
+h2, h3 {
+  color: white;
+  font-weight: lighter;
+}
+body {
+  margin: 2em;
+  background-image: url(./app/img/background-menu.gif);
+  background-position: center;
+  background-size: cover;
+}
+body, input[type="text"], button {
+  color: white;
+  font-family: 'press_start_2pregular';
+}
+button {
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  color: black;
+  font-size: .8rem;
+  font-family: 'press_start_2pregular';
+  padding: 1rem;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+button:hover {
+  background-color: black;
+  color: white;
+}
+button:disabled {
+  background-color: #eee;
+  color: #aaa;
+  cursor: auto;
+}
+  
+/* everywhere else */
+* {
+  font-family: 'press_start_2pregular';
+  padding-bottom: 10px;
+}

@@ -1,0 +1,21 @@
+@import url(./PressStart2P/stylesheet.css);
+
+a {
+    background-color: #3f525c;
+    border-radius: 2px;
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    text-align: center;
+    font-family: 'press_start_2pregular';
+    width: 100%;
+    min-width: 70px;
+    max-width: 150px;
+    margin: .5rem 15px;
+    box-sizing: border-box;
+}
+a:hover {
+    background-color: #000;
+  }
