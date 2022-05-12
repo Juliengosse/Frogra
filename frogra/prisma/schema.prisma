@@ -22,12 +22,12 @@ model Skill {
     type      String 
     value     Int
     plane     Plane   @relation(fields: [planeId], references: [id])
-    planeId  Int     @unique
+    planeId   Int     
 }
 
 model User {
   id        Int       @id @default(autoincrement())
-  name      String?   @db.VarChar(255)
+  name      String    @db.VarChar(255)
   email     String    @unique @db.VarChar(255)
   password  String    @db.VarChar(255)
 }

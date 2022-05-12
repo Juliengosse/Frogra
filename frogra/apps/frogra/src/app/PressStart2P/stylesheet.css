@@ -1,12 +1,4 @@
 @font-face {
-    font-family: 'PressStart2P';
-    src: url('./PressStart2P-Regular.ttf') format('ttf');
-    font-weight: bold;
-    font-style: italic;
-}
-
-
-@font-face {
     font-family: 'press_start_2pregular';
     src: url('pressstart2p-regular_1-webfont.woff2') format('woff2'),
          url('pressstart2p-regular_1-webfont.woff') format('woff');
