@@ -1,16 +1,21 @@
+h1 {
+    color: white;
+    font-size: 320%;
+    -webkit-text-stroke: 0.5px black;
+    text-align: center;
+    margin-top: 12%;
+}
+
 div {
     text-align: center;
 }
 
 h2 {
-    padding: 5%;
+    -webkit-text-stroke: 1.5px black;
 }
 
 input {
-    margin: 2%;
+    width: 25%;
+    margin: 1%;
     color: black;
-}
-
-button {
-    margin: 5%;
 }

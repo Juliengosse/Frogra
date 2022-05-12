@@ -2,15 +2,11 @@ div {
     text-align: center;
 }
 
-h2 {
-    padding: 5%;
-}
-
 input {
     margin: 2%;
     color: black;
 }
 
-button {
-    margin: 5%;
+h2 {
+    -webkit-text-stroke: 1.5px black;
 }

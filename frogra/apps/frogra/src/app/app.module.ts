@@ -13,6 +13,7 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
+import { MainMenuComponent } from './main-menu/main-menu.component';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { RegisterComponent } from './register/register.component';
     HomePageComponent,
     LoginComponent,
     RegisterComponent,
+    MainMenuComponent,
   ],
   imports: [
     BrowserModule,
