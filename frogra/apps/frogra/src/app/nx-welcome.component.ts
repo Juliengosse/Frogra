@@ -111,7 +111,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         line-height: 2.25rem;
         margin-bottom: 0.5rem;
       }
-      #hero {
+      #avion {
         align-items: center;
         background-color: hsla(214, 62%, 21%, 1);
         border: none;
@@ -121,16 +121,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         grid-template-columns: 1fr;
         margin-top: 3.5rem;
       }
-      #hero .text-container {
+      #avion .text-container {
         color: rgba(255, 255, 255, 1);
         padding: 3rem 2rem;
       }
-      #hero .text-container h2 {
+      #avion .text-container h2 {
         font-size: 1.5rem;
         line-height: 2rem;
         position: relative;
       }
-      #hero .text-container h2 svg {
+      #avion .text-container h2 svg {
         color: hsla(162, 47%, 50%, 1);
         height: 2rem;
         left: -0.25rem;
@@ -138,10 +138,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         top: 0;
         width: 2rem;
       }
-      #hero .text-container h2 span {
+      #avion .text-container h2 span {
         margin-left: 2.5rem;
       }
-      #hero .text-container a {
+      #avion .text-container a {
         background-color: rgba(255, 255, 255, 1);
         border-radius: 0.75rem;
         color: rgba(55, 65, 81, 1);
@@ -150,13 +150,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         padding: 1rem 2rem;
         text-decoration: inherit;
       }
-      #hero .logo-container {
+      #avion .logo-container {
         display: none;
         justify-content: center;
         padding-left: 2rem;
         padding-right: 2rem;
       }
-      #hero .logo-container svg {
+      #avion .logo-container svg {
         color: rgba(255, 255, 255, 1);
         width: 66.666667%;
       }
@@ -416,10 +416,10 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
       }
 
       @media screen and (min-width: 768px) {
-        #hero {
+        #avion {
           grid-template-columns: repeat(2, minmax(0, 1fr));
         }
-        #hero .logo-container {
+        #avion .logo-container {
           display: flex;
         }
         #middle-content {
@@ -438,7 +438,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
         </div>
 
         <!--  HERO  -->
-        <div id="hero" class="rounded">
+        <div id="avion" class="rounded">
           <div class="text-container">
             <h2>
               <svg

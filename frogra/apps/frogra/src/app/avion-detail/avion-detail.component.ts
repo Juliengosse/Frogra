@@ -1,30 +1,30 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { Avion } from '../hero';
+import { Avion } from '../avion';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { HeroService } from '../hero.service';
+import { AvionService } from '../avion.service';
 
 @Component({
-  selector: 'app-hero-detail',
-  templateUrl: './hero-detail.component.html',
-  styleUrls: ['./hero-detail.component.css']
+  selector: 'app-avion-detail',
+  templateUrl: './avion-detail.component.html',
+  styleUrls: ['./avion-detail.component.css']
 })
-export class HeroDetailComponent implements OnInit {
+export class AvionDetailComponent implements OnInit {
   @Input() avion?: Avion;
 
   constructor(
     private route: ActivatedRoute,
-    private heroService: HeroService,
+    private avionService: AvionService,
     private location: Location
   ) {}
 
   ngOnInit(): void {
-    this.getHero();
+    this.getAvion();
   }
   
-  getHero(): void {
+  getAvion(): void {
     const id = Number(this.route.snapshot.paramMap.get('id'));
-    this.heroService.getHero(id)
+    this.avionService.getAvion(id)
       .subscribe(avion => this.avion = avion);
   }
 
@@ -34,7 +34,7 @@ export class HeroDetailComponent implements OnInit {
 
   save(): void {
     if (this.avion) {
-      this.heroService.updateHero(this.avion)
+      this.avionService.updateAvion(this.avion)
         .subscribe(() => this.goBack());
     }
   }
