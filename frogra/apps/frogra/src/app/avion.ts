@@ -2,6 +2,7 @@ export interface Avion {
     id: number;
     hp: number;
     atk: number;
-    df: number;
+    def: number;
     name: string;
+    img?: String;
   }

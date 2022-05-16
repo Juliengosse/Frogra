@@ -8,17 +8,17 @@ import { Avion } from './avion';
 export class InMemoryDataService implements InMemoryDbService {
   createDb() {
     const avions :Avion[] = [
-      { id: 1, hp: 150, atk: 10, df: 8, name: 'Concorde'},
-      { id: 2, hp: 50, atk: 10, df: 3, name: 'Cessna 152' },
-      { id: 3, hp: 75, atk: 10, df: 6, name: 'Piper PA28' },
-      { id: 4, hp: 70, atk: 10, df: 4, name: 'Robin DR400' },
-      { id: 5, hp: 500, atk: 10, df: 15, name: 'Rafale' },
-      { id: 6, hp: 180, atk: 10, df: 8, name: 'Boeing 737' },
-      { id: 7, hp: 250, atk: 10, df: 10, name: 'Airbus A380' },
-      { id: 8, hp: 120, atk: 10, df: 8, name: 'Mitsubichi CRJ700' },
-      { id: 9, hp: 200, atk: 10, df: 8, name: 'Airbus Beluga' },
-      { id: 10, hp: 100, atk: 10, df: 7, name: 'Bombardier Q400' },
-      { id: 11, hp: 100, atk: 10, df: 5, name: 'Canadair CL-415' }
+      { id: 1, hp: 150, atk: 10, def: 8, name: 'Concorde', img: 'assets/img/concorde.png'},
+      { id: 2, hp: 50, atk: 10, def: 3, name: 'Cessna 152', img: 'assets/img/cessna152.jpg' },
+      { id: 3, hp: 75, atk: 10, def: 6, name: 'Piper PA28', img: 'assets/img/piperpa28.jpg' },
+      { id: 4, hp: 70, atk: 10, def: 4, name: 'Robin DR400', img: 'assets/img/concorde.png' },
+      { id: 5, hp: 500, atk: 10, def: 15, name: 'Rafale', img: 'assets/img/rafale.jpg' },
+      { id: 6, hp: 180, atk: 10, def: 8, name: 'Boeing 737', img: 'assets/img/concorde.png' },
+      { id: 7, hp: 250, atk: 10, def: 10, name: 'Airbus A380', img: 'assets/img/airbus A380.jpg' },
+      { id: 8, hp: 120, atk: 10, def: 8, name: 'Mitsubichi CRJ700', img: 'assets/img/Mitsubichi CRJ700.jpeg' },
+      { id: 9, hp: 200, atk: 10, def: 8, name: 'Airbus Beluga', img: 'assets/img/airbus beluga.jpg' },
+      { id: 10, hp: 100, atk: 10, def: 7, name: 'Bombardier Q400', img: 'assets/img/Bombardier Q400.jpg' },
+      { id: 11, hp: 100, atk: 10, def: 5, name: 'Canadair CL-415', img: 'assets/img/concorde.png' }
     ];
     return {avions};
   }

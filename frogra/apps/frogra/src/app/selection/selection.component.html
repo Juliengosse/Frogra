@@ -1,0 +1,13 @@
+<button type="button" (click)="goBack()">Retour</button>
+<h2>Selectionnez un avion</h2>>
+<div >
+    <ul class="avions" column-count=2>
+        <li *ngFor="let avion of avions">
+            <a routerLink="/detail/{{avion.id}}">
+                <span class="badge">{{avion.id}}</span><img class="avionPicture"
+                src={{avion.img}} width="50" height="60"
+                alt={{avion.name}}>
+            </a>
+        </li>
+    </ul>
+</div>

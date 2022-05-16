@@ -1,26 +1,26 @@
 <div *ngIf="avion">
 
-    <h2>{{avion.name | uppercase}} Details</h2>
-    <div><span>id: </span>{{avion.id}}</div>
-    <div><span>hp: </span>{{avion.hp}}</div>
-    <div><span>atk: </span>{{avion.atk}}</div>
-    <div><span>df: </span>{{avion.df}}</div>
+  <h2>{{avion.name | uppercase}} Details</h2>
+  <div><span>id: </span>{{avion.id}}</div>
+  <div><span>hp: </span>{{avion.hp}}</div>
+  <div><span>atk: </span>{{avion.atk}}</div>
+  <div><span>def: </span>{{avion.def}}</div>
+  <br>
+  <div>
+    <label for="avion-name">Nom avion: </label>
+    <input id="avion-name" [(ngModel)]="avion.name" placeholder="name">
     <br>
-    <div>
-      <label for="avion-name">Avion name: </label>
-      <input id="avion-name" [(ngModel)]="avion.name" placeholder="name">
-      <br>
-      <label for="avion-life">Avion life: </label>
-      <input id="avion-hp" [(ngModel)]="avion.hp" placeholder="life">
-      <br>
-      <label for="avion-atk">Avion atk : </label>
-      <input id="avion-atk" [(ngModel)]="avion.atk" placeholder="attaque">
-      <br>
-      <label for="avion-df">Avion df : </label>
-      <input id="avion-df" [(ngModel)]="avion.df" placeholder="defense">
-      <br>
-      <button type="button" (click)="goBack()">go back</button>
-      <button type="button" (click)="save()">save</button>
-    </div>
-    
+    <label for="avion-life">Vie avion: </label>
+    <input id="avion-hp" [(ngModel)]="avion.hp" placeholder="life">
+    <br>
+    <label for="avion-atk">Atk avion: </label>
+    <input id="avion-atk" [(ngModel)]="avion.atk" placeholder="attaque">
+    <br>
+    <label for="avion-def">Def avion: </label>
+    <input id="avion-def" [(ngModel)]="avion.def" placeholder="defense">
+    <br>
+    <button type="button" (click)="goBack()">Retour</button>
+    <button type="button" (click)="save()">Sauvegarder</button>
   </div>
+  
+</div>

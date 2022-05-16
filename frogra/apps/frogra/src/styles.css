@@ -11,7 +11,7 @@ h1 {
   font-size: 320%;
   -webkit-text-stroke: 0.5px black;
   text-align: center;
-  margin-top: 12%;
+  /*margin-top: 12%;*/
 }
 h2, h3 {
   color: white;
@@ -20,7 +20,7 @@ h2, h3 {
 body {
   margin: 2em;
   background-color: black;
-  background-image: url(./app/img/background-menu.gif);
+  background-image: url(assets/img/background-menu.gif);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -59,3 +59,13 @@ button:disabled {
   font-family: 'press_start_2pregular';
   padding-bottom: 10px;
 }
+li {
+  display:block;
+  float:left;
+  padding-left: 10px;
+  padding-right: 10px;
+  }
+  li[float="left"] + li {
+  display:block;
+  float:none;
+  }

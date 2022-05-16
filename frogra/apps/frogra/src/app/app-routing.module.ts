@@ -7,6 +7,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { CreditsComponent } from './credits/credits.component';
+import { SelectionComponent } from './selection/selection.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home-page', pathMatch: 'full' },
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'detail/:id', component: AvionDetailComponent },
   { path: 'avions', component: AvionsComponent },
   { path : 'main-menu', component: MainMenuComponent},
+  { path: 'credits', component: CreditsComponent },
+  { path: 'selection', component: SelectionComponent },
   
 ];
 

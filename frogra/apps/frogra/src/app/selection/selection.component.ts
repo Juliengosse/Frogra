@@ -4,13 +4,12 @@ import { Location } from '@angular/common';
 import { AvionService } from '../avion.service';
 
 @Component({
-  selector: 'app-avions',
-  templateUrl: './avions.component.html',
-  styleUrls: ['./avions.component.css']
+  selector: 'frogra-selection',
+  templateUrl: './selection.component.html',
+  styleUrls: ['./selection.component.css'],
 })
-export class AvionsComponent implements OnInit {
+export class SelectionComponent implements OnInit {
   avions: Avion[] = [];
-  
   constructor(
     private avionService: AvionService,
     private location: Location
@@ -28,3 +27,7 @@ export class AvionsComponent implements OnInit {
     .subscribe(avions => this.avions = avions);
   }
 }
+
+
+
+

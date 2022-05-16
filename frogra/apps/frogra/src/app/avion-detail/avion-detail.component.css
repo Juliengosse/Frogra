@@ -1,0 +1,11 @@
+h2{
+    text-align: center;
+}
+div>div{
+    margin-left: 25%;
+    -webkit-text-stroke: 1.5px black;
+}
+
+div>div>input,div>div>button {
+    -webkit-text-stroke: 0px white;
+}

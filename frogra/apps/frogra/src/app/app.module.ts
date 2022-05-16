@@ -14,6 +14,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { MainMenuComponent } from './main-menu/main-menu.component';
+import { CreditsComponent } from './credits/credits.component';
+import { SelectionComponent } from './selection/selection.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +28,8 @@ import { MainMenuComponent } from './main-menu/main-menu.component';
     LoginComponent,
     RegisterComponent,
     MainMenuComponent,
+    CreditsComponent,
+    SelectionComponent,
   ],
   imports: [
     BrowserModule,
