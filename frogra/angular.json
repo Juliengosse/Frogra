@@ -3,8 +3,6 @@
   "projects": {
     "api": "apps/api",
     "frogra": "apps/frogra",
-    "frogra-e2e": "apps/frogra-e2e",
-    "products": "libs/products",
-    "ui": "libs/ui"
+    "frogra-e2e": "apps/frogra-e2e"
   }
 }
