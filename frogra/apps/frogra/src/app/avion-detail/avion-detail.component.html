@@ -11,13 +11,13 @@
     <input id="avion-name" [(ngModel)]="avion.name" placeholder="name">
     <br>
     <label for="avion-life">Vie avion: </label>
-    <input id="avion-hp" [(ngModel)]="avion.hp" placeholder="life">
+    <input type="number" id="avion-hp" [(ngModel)]="avion.hp" placeholder="life">
     <br>
     <label for="avion-atk">Atk avion: </label>
-    <input id="avion-atk" [(ngModel)]="avion.atk" placeholder="attaque">
+    <input type="number" id="avion-atk" [(ngModel)]="avion.atk" placeholder="attaque">
     <br>
     <label for="avion-def">Def avion: </label>
-    <input id="avion-def" [(ngModel)]="avion.def" placeholder="defense">
+    <input type="number" id="avion-def" [(ngModel)]="avion.def" placeholder="defense">
     <br>
     <button type="button" (click)="goBack()">Retour</button>
     <button type="button" (click)="save()">Sauvegarder</button>
