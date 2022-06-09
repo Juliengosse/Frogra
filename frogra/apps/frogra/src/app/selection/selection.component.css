@@ -1,3 +1,7 @@
 h2{
     text-align: center;
 }
+div{
+    max-width: 50%;
+    padding-left: 28%;
+}
