@@ -1,7 +1,9 @@
 <h1>FROGRA</h1>
 <div>
     <h2>CONEXION</h2>
-    <input type="text" value="Pseudo" onclick="this.value='';" onBlur="if(this.value == ''){this.value='Pseudo';}"><br>
-    <input type="text" value="Mot de passe" onclick="this.value='';" onBlur="if(this.value == ''){this.value='Mot de passe';}"><br>
-    <button routerLink="/main-menu">Se connecter </button>
+    <form>
+        <input type="text" value="Pseudo" name="pseudo"><br>
+        <input type="text" value="Mot de passe" name="password"><br>
+        <button routerLink="/main-menu">Se connecter </button>
+    </form>
 </div>
